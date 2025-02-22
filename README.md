@@ -40,7 +40,7 @@
 ![React](https://img.shields.io/badge/REACT-20232A.svg?&style=flat&logo=react&logoColor=%2361DAFB)&nbsp;
 ![Vite](https://img.shields.io/badge/VITE-646CFF.svg?&style=flat&logo=vite&logoColor=white)&nbsp;
 ![React Router](https://img.shields.io/badge/REACT%20ROUTER-CA4245.svg?&style=flat&logo=react-router&logoColor=white)&nbsp;
-![Tailwind CSS](https://img.shields.io/badge/TAILWIND%20CSS-38B2AC.svg?&style=flat&logo=tailwind-css&logoColor=white)&nbsp;
+![Tailwind CSS](https://img.shields.io/badge/TAILWIND%20CSS-38B2AC.svg?&style=flat&logo=tailwind-css&logoColor=white)&nbsp;\
 ![Framer Motion](https://img.shields.io/badge/FRAMER%20MOTION-FF0050.svg?&style=flat&logo=framer&logoColor=white)&nbsp;
 ![Three.js](https://img.shields.io/badge/THREE.JS-000000.svg?&style=flat&logo=three.js&logoColor=white)&nbsp;
 ![Axios](https://img.shields.io/badge/AXIOS-5A29E4.svg?&style=flat&logo=axios&logoColor=white)&nbsp;
