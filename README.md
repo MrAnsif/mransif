@@ -56,7 +56,7 @@
 
 
 <details>
-  <summary><b>:brain: &nbsp;Other knowledge, always learning</b></summary>
+  <summary><b> &nbsp;O</b></summary>
   <br/>
 
 
