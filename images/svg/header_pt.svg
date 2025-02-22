@@ -174,48 +174,6 @@ g.typingUnderline rect {
     <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
   </g>  
 
-
-<rect class="headerRect" width="70" height="7.3" rx="1" x="20" y="16.8"/>
-
-<path id="nameTyping">
-  <animate attributeName="d" from="m38,-6 h0" to="m38,-6 h100" dur="9.4s" begin="0s" fill="freeze"/>
-</path>
-
-<text font-family="Courier New" font-size=".22em" fill="white"
-      font-weight="bold" letter-spacing="2">
-  <textPath xlink:href="#nameTyping" >
-      BRUNO TACCA
-  </textPath>
-</text>
-
-<g class="typingUnderline">
-  <rect fill="#FFFFFF" x="69" y="20.5" width="2.5" height="0.4" xlink:href="#underlineTyping">
-      <animate attributeName="visible" from="hidden" to="visible" dur="1s" fill="freeze"/>
-  </rect>
-</g>
-
-<path id="descriptionTyping">
-  <animate attributeName="d" from="m30,-3 h0" to="m30,-3 h100" 
-           dur="5.8s" begin="0s" fill="freeze"/>
-</path>
-
-<text x="64" font-family="Helvetica" font-size=".12em" fill="white"
-     text-anchor="end" alignment-baseline="hanging" font-style="italic" > 
-  <textPath xlink:href="#descriptionTyping" >
-      Liderança, Arquitetura de Software, Desenvolvimento, Ciência e&amp; Tecnologia.
-  </textPath>
-</text>
-
-<text x="2" y="12" font-family="Helvetica" font-size=".22em" 
-      fill="#AAA" font-weight="bold"> 
-      E aí!
-</text>
-
-<text x="17" y="12" font-family="Helvetica" font-size=".22em" 
-      fill="#AAA" font-weight="bold"> 
-      Tudo bom?
-</text>
-
 <image style="overflow:visible;clip-path:url(#mask);TWFkZUJ5VGFjY2E=;" 
 width="4" x="11.5" y="8.5"
 xlink:href="data:image/gif;base64,R0lGODlh8QDqAPcAANqnNNuoNNuoNdypNt2qN9upOd6rON+sOduqPNysP+CsN+GtN+SvN+CtOuGuPOKvPeWwOeaxOuOwPuSxP+mzOeu1O+mzPe63PO+5P/O7PvO7P/O8P/S8P9ysQd2vR96wSt6xTt+zUeWyQOazQee0Qum1Qei1Q+u3Q+23QOq3Reu4Ru25RO+6RO+7Rey5SO26Se67Su+8S/O7QvO9Q/S8QfG7RfC8R/a/Rfa/RvO+Sfa/SPC9TPO/TPK/TuC0VOC1V+C2WOG2WuG4XeK6Y+O8ZuO9aOS+a+S/b/bARvfASPfCSvPAT/TATfXBTvjCS/jDTPnDTfnETfnFTvrFT/TBUPbDUfbDUvfEU/jEUfvGUvrHU/vHU/jFVPrHVvvIVvzIVPzJVf3JVv3KV/vIWP3KWP7LWP7LW//MWf/MW//NXP/NXeXBcuXCdebDd+fFfOjHgejIhPnFU/3JV/rGUduoN92tQ/zJWfG+TfnGVOOvOvvHUtqnNe67RfXASfnFT+OuOPG5Pd+rNvnGVfC6QuK5X+ezPPW+Q/XCUfS+R+u2QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
