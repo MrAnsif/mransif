@@ -55,12 +55,7 @@
 </details>
 
 
-<details>
-  <summary><b> &nbsp;O</b></summary>
-  <br/>
 
-
-</details>
 
 <details>
   <summary><b>:gear: &nbsp;GitHub Statistics</b></summary>
