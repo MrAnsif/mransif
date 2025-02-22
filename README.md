@@ -26,7 +26,7 @@
 
 <hr/>
 
-<details>
+<!-- <details> -->
   <summary><b>:computer: &nbsp;Tech knowledge</b></summary>
   <br/>
 
@@ -51,7 +51,7 @@
 ![VSCode](https://img.shields.io/badge/VSCODE-007ACC.svg?&style=flat&logo=visual-studio-code)&nbsp;
 
 
-</details>
+<!-- </details> -->
 
 
 
