@@ -6,12 +6,14 @@
 
 ### :space_invader: &nbsp;About Me
 
-👨‍💻  Aspiring Software Engineer | Web Developer.\
-🌱  Passionate about web development, automation, and innovation.\
-🛠️  Experienced in frontend development with React.js & Tailwind CSS.\
-💡  Exploring AI, MERN stack, and backend development to expand my expertise.\
-⚡  Enjoys problem-solving and optimizing workflows for efficiency.\
-🚀  Building innovative web solutions and improving my skills for future opportunities.
+👨‍💻  Aspiring Software Engineer | Full-Stack Web Developer\
+🌱  Skilled in JavaScript, TypeScript, Python, and SQL.\
+🛠️  Proficient in React.js, Next.js, Tailwind CSS, Vite, GSAP, Lenis, and ShadCN for modern frontend development.\
+⚡  Experienced in backend development with Node.js, Express.js, MongoDB, PostgreSQL, Prisma, and REST APIs.\
+🤖  Exploring AI integrations with OpenRouter and Gemini API.\
+🚀  Hands-on with tools like Git, GitHub, Vercel, Render, Railway, Supabase, Cloudinary, Clerk, and Stripe.\
+💡  Passionate about problem-solving, performance optimization, and building efficient web solutions.
+
 
 <p align="center">
   <a href="mailto:ansifpta2003@gmail.com"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -34,21 +36,37 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?&style=flat&logo=html5&logoColor=white)&nbsp;
 ![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?&style=flat&logo=css3&logoColor=white)&nbsp;
 ![JavaScript](https://img.shields.io/badge/JAVASCRIPT-323330.svg?&style=flat&logo=javascript&logoColor=%23F7DF1E)&nbsp;
+![TypeScript](https://img.shields.io/badge/TYPESCRIPT-%23007ACC.svg?&style=flat&logo=typescript&logoColor=white)&nbsp;
 ![Python](https://img.shields.io/badge/PYTHON-3776AB.svg?&style=flat&logo=python&logoColor=white)&nbsp;
-![NodeJS](https://img.shields.io/badge/NODEJS-339933.svg?&style=flat&logo=node.js&logoColor=white)&nbsp;\
-![MongoDB](https://img.shields.io/badge/MONGODB-47A248.svg?&style=flat&logo=mongodb&logoColor=white)&nbsp;
+![SQL](https://img.shields.io/badge/SQL-336791.svg?&style=flat&logo=postgresql&logoColor=white)&nbsp;\
 ![React](https://img.shields.io/badge/REACT-20232A.svg?&style=flat&logo=react&logoColor=%2361DAFB)&nbsp;
+![Next.js](https://img.shields.io/badge/NEXT.JS-000000.svg?&style=flat&logo=nextdotjs&logoColor=white)&nbsp;
 ![Vite](https://img.shields.io/badge/VITE-646CFF.svg?&style=flat&logo=vite&logoColor=white)&nbsp;
-![React Router](https://img.shields.io/badge/REACT%20ROUTER-CA4245.svg?&style=flat&logo=react-router&logoColor=white)&nbsp;
-![Tailwind CSS](https://img.shields.io/badge/TAILWIND%20CSS-38B2AC.svg?&style=flat&logo=tailwind-css&logoColor=white)&nbsp;\
-![Framer Motion](https://img.shields.io/badge/FRAMER%20MOTION-FF0050.svg?&style=flat&logo=framer&logoColor=white)&nbsp;
-![Three.js](https://img.shields.io/badge/THREE.JS-000000.svg?&style=flat&logo=three.js&logoColor=white)&nbsp;
-![Axios](https://img.shields.io/badge/AXIOS-5A29E4.svg?&style=flat&logo=axios&logoColor=white)&nbsp;
-![TypeScript](https://img.shields.io/badge/TYPESCRIPT-%23007ACC.svg?&style=flat&logo=typescript&logoColor=white)&nbsp;\
+![Tailwind CSS](https://img.shields.io/badge/TAILWIND%20CSS-38B2AC.svg?&style=flat&logo=tailwind-css&logoColor=white)&nbsp;
+![ShadCN](https://img.shields.io/badge/SHADCN-000000.svg?&style=flat&logo=shadcnui&logoColor=white)&nbsp;\
+![GSAP](https://img.shields.io/badge/GSAP-88CE02.svg?&style=flat&logo=greensock&logoColor=white)&nbsp;
+![Lenis](https://img.shields.io/badge/LENIS-000000.svg?&style=flat&logo=framer&logoColor=white)&nbsp;
+![NodeJS](https://img.shields.io/badge/NODEJS-339933.svg?&style=flat&logo=node.js&logoColor=white)&nbsp;
+![Express.js](https://img.shields.io/badge/EXPRESS.JS-000000.svg?&style=flat&logo=express&logoColor=white)&nbsp;\
+![MongoDB](https://img.shields.io/badge/MONGODB-47A248.svg?&style=flat&logo=mongodb&logoColor=white)&nbsp;
+![PostgreSQL](https://img.shields.io/badge/POSTGRESQL-4169E1.svg?&style=flat&logo=postgresql&logoColor=white)&nbsp;
+![Prisma](https://img.shields.io/badge/PRISMA-2D3748.svg?&style=flat&logo=prisma&logoColor=white)&nbsp;
+![REST API](https://img.shields.io/badge/REST%20API-005571.svg?&style=flat&logo=postman&logoColor=white)&nbsp;
+![JWT](https://img.shields.io/badge/JWT-000000.svg?&style=flat&logo=jsonwebtokens&logoColor=white)&nbsp;\
+![OpenRouter](https://img.shields.io/badge/OPENROUTER-A855F7.svg?&style=flat&logo=ai&logoColor=white)&nbsp;
+![Gemini](https://img.shields.io/badge/GOOGLE%20GEMINI-4285F4.svg?&style=flat&logo=googlegemini&logoColor=white)&nbsp;\
 ![Git](https://img.shields.io/badge/GIT-%23F05033.svg?&style=flat&logo=git&logoColor=white)&nbsp;
 ![GitHub](https://img.shields.io/badge/GITHUB-%23121011.svg?&style=flat&logo=github&logoColor=white)&nbsp;
-![LINUX](https://img.shields.io/badge/LINUX-FCC624?style=flat-square&logo=linux&logoColor=black)
-![VSCode](https://img.shields.io/badge/VSCODE-007ACC.svg?&style=flat&logo=visual-studio-code)&nbsp;
+![Vercel](https://img.shields.io/badge/VERCEL-000000.svg?&style=flat&logo=vercel&logoColor=white)&nbsp;
+![Render](https://img.shields.io/badge/RENDER-46E3B7.svg?&style=flat&logo=render&logoColor=white)&nbsp;
+![Railway](https://img.shields.io/badge/RAILWAY-0B0D0E.svg?&style=flat&logo=railway&logoColor=white)&nbsp;
+![Supabase](https://img.shields.io/badge/SUPABASE-3ECF8E.svg?&style=flat&logo=supabase&logoColor=white)&nbsp;\
+![Cloudinary](https://img.shields.io/badge/CLOUDINARY-3448C5.svg?&style=flat&logo=cloudinary&logoColor=white)&nbsp;
+![Clerk](https://img.shields.io/badge/CLERK-000000.svg?&style=flat&logo=clerk&logoColor=white)&nbsp;
+![Stripe](https://img.shields.io/badge/STRIPE-008CDD.svg?&style=flat&logo=stripe&logoColor=white)&nbsp;\
+![Linux](https://img.shields.io/badge/LINUX-FCC624.svg?&style=flat&logo=linux&logoColor=black)&nbsp;
+![VSCode](https://img.shields.io/badge/VSCODE-007ACC.svg?&style=flat&logo=visual-studio-code&logoColor=white)
+
 
 
 <!-- </details> -->
