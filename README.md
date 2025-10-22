@@ -118,8 +118,8 @@
 
 ## 📊 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sonnysangha&show_icons=true&theme=tokyonight&count_private=true" height="160em"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sonnysangha&layout=compact&theme=tokyonight" height="160em"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=mransif&show_icons=true&theme=tokyonight&count_private=true" height="160em"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mransif&layout=compact&theme=tokyonight" height="160em"/>
 </p>
 
 ---
@@ -129,7 +129,7 @@
 
 <p align="center">
   <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=sonnysangha&theme=radical&hide_border=false&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" />
+    <img src="https://streak-stats.demolab.com?user=mransif&theme=radical&hide_border=false&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" />
   </a>
 </p>
 
