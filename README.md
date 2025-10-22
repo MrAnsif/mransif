@@ -116,17 +116,22 @@
 
 
 
-<details>
-  <summary><b>:gear: &nbsp;GitHub Statistics</b></summary>
-  <br/>
-    <p align="center">
-        <img height="137px" src="https://github-readme-streak-stats.herokuapp.com/?user=mransif&hide_border=true&theme=nightowl" />
-    </p>
-    <p align="center">
-        <img height="137px" src="https://github-readme-stats.vercel.app/api?username=mransif&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&line_height=21&theme=nightowl" /> 
-        <img height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mransif&hide=html&hide_title=true&hide_border=true&layout=compact&langs_count=8&theme=nightowl" />
-    </p>
-</details>
+## 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=SuhailMoideen07&show_icons=true&theme=tokyonight&count_private=true" height="160em"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SuhailMoideen07&layout=compact&theme=tokyonight" height="160em"/>
+</p>
+
+---
+
+
+## 📊 GitHub Streak  
+
+<p align="center">
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com?user=SuhailMoideen07&theme=radical&hide_border=false&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" />
+  </a>
+</p>
 
 
 <hr/>
