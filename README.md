@@ -56,6 +56,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?&style=flat&logo=mongodb&logoColor=white)&nbsp;
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?&style=flat&logo=postgresql&logoColor=white)&nbsp;
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748.svg?&style=flat&logo=prisma&logoColor=white)&nbsp;
+![SQL](https://img.shields.io/badge/SQL-336791.svg?&style=flat&logo=postgresql&logoColor=white)&nbsp;
 
 ---
 
@@ -63,7 +64,6 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330.svg?&style=flat&logo=javascript&logoColor=%23F7DF1E)&nbsp;
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC.svg?&style=flat&logo=typescript&logoColor=white)&nbsp;
 ![Python](https://img.shields.io/badge/Python-3776AB.svg?&style=flat&logo=python&logoColor=white)&nbsp;
-![SQL](https://img.shields.io/badge/SQL-336791.svg?&style=flat&logo=postgresql&logoColor=white)&nbsp;
 
 ---
 
