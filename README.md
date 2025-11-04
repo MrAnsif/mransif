@@ -6,7 +6,7 @@
 
 ### :space_invader: &nbsp;About Me
 
-👨‍💻  Aspiring Software Engineer | Full-Stack Web Developer\
+👨‍💻  Full-Stack Web Developer\
 🌱  Skilled in JavaScript, TypeScript, Python, and SQL.\
 🛠️  Proficient in React.js, Next.js, Tailwind CSS, Vite, GSAP, Lenis, and ShadCN for modern frontend development.\
 ⚡  Experienced in backend development with Node.js, Express.js, MongoDB, PostgreSQL, Prisma, and REST APIs.\
