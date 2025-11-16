@@ -3,6 +3,7 @@
 <table align="right">
  <tr><td><a href="README.md"><img src="images/us-flag.png" height="13"> English</a></td></tr>
 </table>
+ <!-- <p align="left"> <img src="https://komarev.com/ghpvc/?username=mransif&label=Profile%20views&color=0e75b6&style=flat" alt="williyam-m" /> </p> -->
 
 ### :space_invader: &nbsp;About Me
 
