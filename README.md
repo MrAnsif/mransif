@@ -107,7 +107,7 @@ I like building products that feel smooth, fast, and useful, whether it's fronte
 ## Leetcode streak
 <div align="center">
 
-<img src="https://leetcard.jacoblin.cool/Ansif?theme=dark&font=Fira%20Code&ext=heatmap" alt="LeetCode Stats"/>
+<img src="https://leetcard.jacoblin.cool/ansif01?theme=dark&font=Fira%20Code&ext=heatmap" alt="LeetCode Stats"/>
 
 </div>
 <hr/>
