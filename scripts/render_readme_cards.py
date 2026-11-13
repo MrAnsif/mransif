@@ -29,9 +29,9 @@ OUT  = os.path.join(ROOT, "cards")
 FONTS = os.path.join(ROOT, "fonts")
 
 # ---- hand-set numbers (update manually when they change) --------------------
-PROJECTS_BUILT = "5"      # number of full projects shipped end-to-end
-TOOLS_SHIPPED  = "10"     # tools, APIs, features deployed to production
-LC_SOLVED      = "275"    # LeetCode problems solved (check leetcode.com/u/ansif01)
+PROJECTS_BUILT   = "5"      # number of full projects shipped end-to-end
+SOFTWARE_SHIPPED = "6+"     # freelance software and client platforms delivered
+LC_SOLVED        = "275"    # LeetCode problems solved (check leetcode.com/u/ansif01)
 
 # ---- brand tokens -----------------------------------------------------------
 PAPER      = "#f3f3f1"
@@ -418,11 +418,11 @@ def repo_stars():
 if __name__ == "__main__":
     data = json.load(open(DATA))
     hero()
-    tile("built",   "BUILT",   TECH,   "#ffffff", PROJECTS_BUILT, "projects",
+    tile("built",   "BUILT",   TECH,   "#ffffff", PROJECTS_BUILT,   "projects",
          "Full-stack apps, AI integrations, and side projects shipped end-to-end.", 3.1, 0)
-    tile("shipped", "SHIPPED", STUDIO, "#ffffff", TOOLS_SHIPPED,  "tools",
-         "Developer tools, APIs, and production-grade features built and deployed.", 3.35, 1)
-    tile("solved",  "SOLVED",  LEARN,  INK,       LC_SOLVED,      "problems",
+    tile("shipped", "SHIPPED", STUDIO, "#ffffff", SOFTWARE_SHIPPED, "softwares",
+         "Custom software, web platforms, and MVPs delivered for freelance clients.", 3.35, 1)
+    tile("solved",  "SOLVED",  LEARN,  INK,       LC_SOLVED,        "problems",
          "LeetCode problems solved. JavaScript, Python, SQL — all three.", 3.6, 2)
     activity(data)
     stars = repo_stars()
@@ -431,4 +431,9 @@ if __name__ == "__main__":
     section_title("What I'm", "coding", "dark")
     section_title("What I'm", "coding", "light")
     heatmap(data)
+    try:
+        from render_skills_card import render_skills
+        render_skills()
+    except Exception as e:
+        print(f"skills_card: {e}")
 
