@@ -151,7 +151,7 @@ def text_lines(x, y, lines, lh, attrs):
 
 # ---- 1 · hero ----------------------------------------------------------------
 def hero():
-    h = 320
+    h = 420
     body = f"""
 <defs>
   <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0">
@@ -170,14 +170,14 @@ def hero():
   <rect class="live" x="48" y="49" width="8" height="8" rx="2" fill="{TECH}"/>
   <text x="66" y="57" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">FULL-STACK DEVELOPER</text>
 </g>
-<text class="r" {d(0.15)} x="44" y="168" font-family="{SERIF}" font-size="112" letter-spacing="-2.5" fill="{INK}">Ansif</text>
-<text class="r" {d(0.3)} x="44" y="248" font-family="{SERIF}" font-style="italic" font-size="80" letter-spacing="-2" fill="url(#shine)">mransif</text>
+<text class="r" {d(0.15)} x="44" y="190" font-family="{SERIF}" font-size="116" letter-spacing="-2.5" fill="{INK}">Ansif</text>
+<text class="r" {d(0.3)} x="44" y="290" font-family="{SERIF}" font-style="italic" font-size="116" letter-spacing="-2.5" fill="url(#shine)">Muhammed</text>
 <g class="r" {d(0.55)}>
-  {text_lines(48, 285, ["I build modern web apps with clean UI, scalable backends,", "and practical AI integrations."], 26, f'font-family="{SANS}" font-size="17" fill="{INK_SOFT}"')}
+  {text_lines(48, 338, ["I build modern web apps with clean UI, scalable backends,", "and practical AI integrations."], 27, f'font-family="{SANS}" font-size="18" fill="{INK_SOFT}"')}
 </g>
 <g class="f" {d(0.8)}>
-  <text x="48" y="315" font-family="{MONO}" font-size="13" fill="{INK}">portfolio-ansif.vercel.app</text>
-  <text class="nu" x="244" y="315" font-family="{MONO}" font-size="13" fill="{TECH}">&#8599;</text>
+  <text x="48" y="396" font-family="{MONO}" font-size="13" fill="{INK}">portfolio-ansif.vercel.app</text>
+  <text class="nu" x="254" y="396" font-family="{MONO}" font-size="13" fill="{TECH}">&#8599;</text>
 </g>
 """
     write("hero.svg", svg(W, h, body, ["serif", "serif-i", "sans", "mono"],
@@ -248,10 +248,10 @@ def tile(name, label, color, on, num, word, blurb, delay, pos):
 # ---- 3 · activity (monthly bars) --------------------------------------------
 def activity(data):
     h = 340
-    monthly = data["monthly"][-12:]
+    monthly = data["monthly"][-24:]
     best = max(monthly[:-1] or monthly, key=lambda m: m["total"])
     top = best["total"]
-    x0, x1, base, maxh, gap = 40, 600, 292, 140, 10
+    x0, x1, base, maxh, gap = 40, 600, 292, 140, 5
     bw = (x1 - x0 - gap * (len(monthly) - 1)) / len(monthly)
     bars = []
     for i, m in enumerate(monthly):
@@ -260,17 +260,28 @@ def activity(data):
         bh = max(4, round(m["total"] / top * maxh)) if top > 0 else 4
         x = x0 + i * (bw + gap)
         fill = TECH if is_best else ("#c9c9c4" if partial else INK)
-        label = datetime.date.fromisoformat(m["month"] + "-01").strftime("%b")
+        dt = datetime.date.fromisoformat(m["month"] + "-01")
+        if dt.month == 1:
+            label = dt.strftime("Jan")
+        elif i % 2 == 1:
+            label = dt.strftime("%b")
+        else:
+            label = ""
+        full_label = dt.strftime("%B %Y")
+        delay = 2.2 + i * 0.035
         bars.append(
-            f'<rect class="g" style="animation-delay:{2.2 + i * 0.07:.2f}s" x="{x:.1f}" y="{base - bh}" '
-            f'width="{bw:.1f}" height="{bh}" rx="4" fill="{fill}"><title>{label}: {m["total"]:,}</title></rect>'
-            f'<text class="f" style="animation-delay:{2.2 + i * 0.07:.2f}s" x="{x + bw / 2:.1f}" y="{base + 22}" '
-            f'text-anchor="middle" font-family="{MONO}" font-size="11" fill="{MUTED}">{label}</text>'
+            f'<rect class="g" style="animation-delay:{delay:.2f}s" x="{x:.1f}" y="{base - bh}" '
+            f'width="{bw:.1f}" height="{bh}" rx="3.5" fill="{fill}"><title>{full_label}: {m["total"]:,} contributions</title></rect>'
         )
+        if label:
+            bars.append(
+                f'<text class="f" style="animation-delay:{delay:.2f}s" x="{x + bw / 2:.1f}" y="{base + 22}" '
+                f'text-anchor="middle" font-family="{MONO}" font-size="10" fill="{MUTED}">{label}</text>'
+            )
         if is_best:
             bars.append(
                 f'<text class="p" style="animation-delay:3.2s" x="{x + bw / 2:.1f}" y="{base - bh - 10}" '
-                f'text-anchor="middle" font-family="{MONO}" font-size="11" fill="{TECH}">{m["total"]:,}</text>'
+                f'text-anchor="middle" font-family="{MONO}" font-size="11" font-weight="600" fill="{TECH}">{m["total"]:,}</text>'
             )
     cs = data["current_streak"]["length"]
     ls = data["longest_streak"]["length"]
@@ -293,13 +304,13 @@ def activity(data):
             side.append(f'<rect class="f" {d(2.6)} x="650" y="{y + 44}" width="190" height="1" fill="{RULE}"/>')
     body = f"""
 <rect width="{W}" height="{h}" rx="14" fill="{PAPER}"/>
-<text class="f" {d(1.9)} x="40" y="58" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">THE LAST 12 MONTHS ON GITHUB</text>
+<text class="f" {d(1.9)} x="40" y="58" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">THE LAST 24 MONTHS ON GITHUB</text>
 <text class="r" {d(2.0)} x="38" y="114" font-family="{SERIF}" font-size="52" fill="{INK}">{data["total_contributions"]:,} <tspan font-style="italic">contributions</tspan></text>
 {''.join(bars)}
 {''.join(side)}
 """
     write("activity.svg", svg(W, h, body, ["serif", "serif-i", "sans", "mono"],
-        f'{data["total_contributions"]:,} contributions in the last year, {cs}-day streak'))
+        f'{data["total_contributions"]:,} contributions in the last 2 years, {cs}-day streak'))
 
 
 # ---- 4 · repo cards ----------------------------------------------------------
@@ -345,7 +356,8 @@ def level_for(c):
 
 
 def heatmap(data):
-    days = data["days"]
+    # Slice trailing 371 days (~53 weeks) for 880px single-row grid
+    days = data["days"][-371:]
     first = datetime.date.fromisoformat(days[0]["date"])
     lead = (first.weekday() + 1) % 7
     cell, step, gx, gy = 12, 15, 44, 96
@@ -387,7 +399,7 @@ def heatmap(data):
 <text x="{legend_x + len(BLUE) * 14 + 2}" y="{gy + 7 * step + 16}" font-family="{MONO}" font-size="11" fill="{MUTED}">more</text></g>
 """
     write("heatmap.svg", svg(W, h, body, ["serif", "serif-i", "mono"],
-        f'Contribution graph: {data["total_contributions"]:,} contributions in the last year'))
+        f'Contribution graph: {data["total_contributions"]:,} contributions in the last 2 years'))
 
 
 def repo_stars():

@@ -25,7 +25,7 @@ def get_data(user):
         raise
 
 data = get_data(USER)
-contribs = data["contributions"]
+contribs = data["contributions"][-371:]
 total = data["total"]["lastYear"]
 
 CELL, GAP, RAD, LEFT, TOP = 13, 3, 2.5, 34, 24

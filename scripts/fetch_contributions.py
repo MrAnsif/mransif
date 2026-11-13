@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Scrape real daily contribution counts from GitHub's public, unauthenticated
-contributions endpoint and write data/contributions.json with derived stats
-(current streak, longest streak, best day, monthly totals).
+contributions endpoint for the last 2 years (730 days) and write data/contributions.json
+with derived stats (current streak, longest streak, best day, monthly totals).
 
 No token, no auth, no GraphQL — just the public HTML GitHub already serves.
 Run daily by .github/workflows/update-profile-art.yml.
@@ -21,17 +21,10 @@ URL = f"https://github.com/users/{USERNAME}/contributions"
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "contributions.json")
 
 
-def fetch_days():
-    resp = requests.get(URL, headers={"User-Agent": "profile-readme-bot/1.0"}, timeout=30)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
-
+def parse_contribution_cells(html):
+    soup = BeautifulSoup(html, "html.parser")
     cells = soup.select("td.ContributionCalendar-day")
-    if not cells:
-        print("no calendar cells found -- github markup may have changed", file=sys.stderr)
-        sys.exit(1)
-
-    days = []
+    days = {}
     for td in cells:
         date = td.get("data-date")
         if not date:
@@ -44,9 +37,37 @@ def fetch_days():
         else:
             m = re.match(r"(\d+)", text)
             count = int(m.group(1)) if m else 0
-        days.append({"date": date, "count": count, "level": int(td.get("data-level") or 0)})
+        days[date] = {"date": date, "count": count, "level": int(td.get("data-level") or 0)}
+    return days
 
-    days.sort(key=lambda d: d["date"])
+
+def fetch_days():
+    headers = {"User-Agent": "profile-readme-bot/1.0"}
+    all_days = {}
+    now = datetime.date.today()
+
+    # 1. Trailing year up to today
+    resp = requests.get(URL, headers=headers, timeout=30)
+    if resp.ok:
+        all_days.update(parse_contribution_cells(resp.text))
+
+    # 2. Previous 2 calendar years
+    for yr in [now.year - 1, now.year - 2]:
+        url = f"https://github.com/users/{USERNAME}/contributions?from={yr}-12-01&to={yr}-12-31"
+        try:
+            r = requests.get(url, headers=headers, timeout=30)
+            if r.ok:
+                all_days.update(parse_contribution_cells(r.text))
+        except Exception as e:
+            print(f"warning: failed to fetch year {yr}: {e}", file=sys.stderr)
+
+    if not all_days:
+        print("no calendar cells found -- github markup may have changed", file=sys.stderr)
+        sys.exit(1)
+
+    cutoff = (now - datetime.timedelta(days=730)).isoformat()
+    today_str = now.isoformat()
+    days = [all_days[d] for d in sorted(all_days.keys()) if d >= cutoff and d <= today_str]
     return days
 
 
@@ -117,7 +138,6 @@ if __name__ == "__main__":
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, "w") as f:
         json.dump(data, f, indent=2)
-    print(f"wrote {OUT_PATH}: {data['total_contributions']} contributions, "
+    print(f"wrote {OUT_PATH}: {data['total_contributions']} contributions across {len(days)} days ({data['range']['start']} to {data['range']['end']}), "
           f"current streak {data['current_streak']['length']}, "
           f"longest streak {data['longest_streak']['length']}")
-
