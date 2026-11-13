@@ -31,7 +31,7 @@ FONTS = os.path.join(ROOT, "fonts")
 # ---- hand-set numbers (update manually when they change) --------------------
 PROJECTS_BUILT = "5"      # number of full projects shipped end-to-end
 TOOLS_SHIPPED  = "10"     # tools, APIs, features deployed to production
-LC_SOLVED      = "50"     # LeetCode problems solved (check leetcode.com/u/ansif01)
+LC_SOLVED      = "275"    # LeetCode problems solved (check leetcode.com/u/ansif01)
 
 # ---- brand tokens -----------------------------------------------------------
 PAPER      = "#f3f3f1"

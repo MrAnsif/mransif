@@ -2,9 +2,10 @@
      by .github/workflows/update-profile-art.yml. No spaces between cards in a row. -->
 <div align="center">
 <a href="https://portfolio-ansif.vercel.app/"><img src="./cards/hero.svg" width="100%" alt="Ansif. Full-stack developer. I build modern web apps with clean UI, scalable backends, and practical AI integrations." /></a><br>
-<img src="./cards/heatmap.svg" width="100%" alt="Ansif's contribution graph, in blue, refreshed daily" /><br>
-<img src="./cards/activity.svg" width="100%" alt="Contributions in the last 12 months, by month, with streak and busiest day" /><br>
-<a href="https://github.com/MrAnsif?tab=repositories"><img src="./cards/built.svg" width="33.333%" alt="BUILT: 5 projects" /></a><a href="https://www.linkedin.com/in/ansif1/"><img src="./cards/shipped.svg" width="33.333%" alt="SHIPPED: 10 tools" /></a><a href="https://leetcode.com/u/ansif01/"><img src="./cards/solved.svg" width="33.333%" alt="SOLVED: 50 problems" /></a><br>
+<!-- <img src="./cards/heatmap.svg" width="100%" alt="Ansif's contribution graph, in blue, refreshed daily" /><br> -->
+<img src="./cards/activity.svg" width="100%" alt="Contributions in the last 24 months, by month, with streak and busiest day" /><br>
+<a href="https://leetcode.com/u/ansif01/"><img src="./cards/leetcode-heatmap.svg" width="100%" alt="Ansif's LeetCode submission graph, in blue, refreshed daily" /></a><br>
+<a href="https://github.com/MrAnsif?tab=repositories"><img src="./cards/built.svg" width="33.333%" alt="BUILT: 5 projects" /></a><a href="https://www.linkedin.com/in/ansif1/"><img src="./cards/shipped.svg" width="33.333%" alt="SHIPPED: 10 tools" /></a><a href="https://leetcode.com/u/ansif01/"><img src="./cards/solved.svg" width="33.333%" alt="SOLVED: 275 problems" /></a><br>
 <picture><source media="(prefers-color-scheme: dark)" srcset="./cards/title-coding-dark.svg" /><img src="./cards/title-coding-light.svg" width="100%" alt="What I'm coding" /></picture><br>
 <a href="https://github.com/MrAnsif/portfolio"><img src="./cards/repo-portfolio.svg" width="33.333%" alt="portfolio" /></a><a href="https://github.com/MrAnsif/travel-guide-platform"><img src="./cards/repo-travel-guide-platform.svg" width="33.333%" alt="travel-guide-platform" /></a><a href="https://github.com/MrAnsif/virtual-sim"><img src="./cards/repo-virtual-sim.svg" width="33.333%" alt="virtual-sim" /></a>
 </div>

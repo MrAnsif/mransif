@@ -37,9 +37,17 @@ jobs:
       - name: Render README cards (hero, tiles, activity, repos, blue graph)
         run: python scripts/render_readme_cards.py
 
+      - name: Fetch LeetCode submission data
+        run: python scripts/fetch_leetcode.py
+        env:
+          LEETCODE_USER: ansif01
+
+      - name: Render LeetCode heatmap SVG
+        run: python scripts/render_leetcode_heatmap.py
+
       - name: Commit updated art
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh profile art [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg cards/*.svg"
+          file_pattern: "data/contributions.json data/leetcode.json contrib-heatmap.svg cards/*.svg"
 
