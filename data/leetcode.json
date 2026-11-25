@@ -1,22 +1,22 @@
 {
   "username": "ansif01",
-  "generated_at": "2026-11-24T17:38:33Z",
+  "generated_at": "2026-11-25T17:09:00Z",
   "range": {
     "start": "2025-11-23",
     "end": "2026-11-28"
   },
-  "streak": 166,
-  "total_active_days_profile": 175,
-  "active_days_1yr": 175,
-  "total_submissions_1yr": 564,
+  "streak": 167,
+  "total_active_days_profile": 176,
+  "active_days_1yr": 176,
+  "total_submissions_1yr": 565,
   "best_day_1yr": {
     "date": "2026-06-18",
     "count": 22
   },
   "problems_solved": {
     "All": {
-      "count": 287,
-      "submissions": 407
+      "count": 288,
+      "submissions": 408
     },
     "Easy": {
       "count": 89,
@@ -27,8 +27,8 @@
       "submissions": 211
     },
     "Hard": {
-      "count": 51,
-      "submissions": 57
+      "count": 52,
+      "submissions": 58
     }
   },
   "days": [
@@ -1869,8 +1869,8 @@
     },
     {
       "date": "2026-11-25",
-      "count": 0,
-      "level": 0
+      "count": 1,
+      "level": 1
     },
     {
       "date": "2026-11-26",
